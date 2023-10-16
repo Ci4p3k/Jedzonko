@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="www-icon.png">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Wszystkie Smaki</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-sticky">
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <h1>WSZYSTKIE SMAKI</h1>
+                </div>
+            </div>
+            <nav>
+                <li><span><a href="#">Home</a></span></li>
+                <li><span><a href="#main">Menu</a></span></li>
+                <li><span><a href="#main2" class="button">Zarezerwuj stolik</a></span></li>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Banner -->
+    <div class="banner">
+        <div class="title">
+            <h1>WSZYSTKIE SMAKI</h1>
+        </div>
+        <div class="description">
+            <h5>Witamy w naszej restauracji!</h5>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <div class="main" id="main">
+        <div class="section-title">
+            U NAS
+            <b>DOBRZE ZJESZ</b>
+        </div>
+        <div class="community-info">
+            Zapraszamy każdego do naszej restauracji <a href="#" class="community-links">WSZYSTKIE SMAKI</a>!
+            
+        </div>
+        <div class="community-media">
+            <div class="community-media-box">
+                <div class="community-list-heading-first">
+                    <h3>CENY:</h3> <br>
+                    <table>
+                        <tr>
+                            <td>Obiady</td> <td>od 40zł</td> 
+                        </tr>
+                        <tr>
+                            <td>Przekąski</td> <td>od 10zł</td> 
+                        </tr>
+                        <tr>
+                            <td>Kolacje</td> <td>od 20zł</td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="community-media-box">
+                <img src="menu.jpg" id="menu">
+                
+            </div>
+        </div>
+    </div>
+    <div class="main2" id="main2">
+        <div class="section-title">
+            ZRÓB
+            <b>REZERWACJĘ</b>
+        </div>
+        <div class="community-info">
+            
+    </div>
+    
+    <footer class="contact">
+        <section id="three">
+        <div class="contact-heading">
+            <h1>Zrób rezerwację stolika on-line</h1>
+            <p>Zarezerwuj stolik</p>
+        </div>
+        <form>
+            <input type="text" name="user" placeholder="Twoję Imię i Nazwisko"/>
+            <input type="number" name="numer" placeholder="Twój Numer Telefonu"/>
+            <textarea name="message" placeholder="Wpisz Treść Swojej Wiadomości.........."></textarea>
+            <button class="button" onclick="Continue()" >Kontynuuj</button>
+            <p id="wynik"></p>
+        </form>
+    </section>
+</footer>
+</div>
+    <div class="contact-heading">
+        <p> &copy 2023 Wszelkie prawa zastrzeżone </p>
+        <p> Wykonał: Kacper Leśny</p> 
+    </div>
+</body>
+
+<script>
+    function Continue() {
+        document.getElementById("wynik").innerHTML = "<p><br>Rezerwacja przeprowadzona pomyślnie</p>"
+    }
+</script>
+
+</html>
